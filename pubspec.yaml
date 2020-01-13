@@ -1,8 +1,8 @@
 name: qr_plugin
 description: A new Flutter plugin for qr code and bar code scanning.
 version: 0.0.1
-author:
-homepage:
+author: nhamthanh <nhamchithanh@gmail.com>
+homepage: https://github.com/nhamthanh/qr_plugin
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

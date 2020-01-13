@@ -18,6 +18,10 @@ class QrPlugin: MethodCallHandler {
   override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    } else if(call.method.equalsIgnoreCase("showAlertDialog")) {
+     Dialog dialog=new Dialog(context);
+     dialog.setTitle("Hi, My Name is Flutter");
+     dialog.show();
     } else {
       result.notImplemented()
     }
