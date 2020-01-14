@@ -48,7 +48,10 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: MaterialButton(onPressed: () {
+          child: MaterialButton(
+            child: Text("Show Aleart",style: TextStyle(color: Colors.white),),
+            color: Colors.blue,
+            onPressed: () {
               QrPlugin.showAleartDialog;
             },
           ),
